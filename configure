@@ -1,0 +1,17 @@
+set -x
+set -e
+
+which cmake
+
+rm -rf _builds
+
+cmake -H. -B_builds \
+  -DCMAKE_VERBOSE_MAKEFILE=ON \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_INSTALL_PREFIX=_install \
+  -DCMAKE_SHARED_LIBRARY_PREFIX_CXX=""
+
+cmake --build _builds --target install --config Release
+
+cp _install/lib/cpptorch.so src/ || echo "Failed: cpptorch.so -> src"
+cp _install/lib/cpptorch.dylib src/cpptorch.so || echo "Failed: cpptorch.dylib -> src"
