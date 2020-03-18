@@ -1,4 +1,4 @@
 library(testthat)
-library(cpptorch)
+library(Rtorchcpp)
 
-test_check("cpptorch")
+test_check("Rtorchcpp")

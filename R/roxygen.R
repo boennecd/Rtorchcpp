@@ -1,3 +1,3 @@
-#' @useDynLib cpptorch
+#' @useDynLib Rtorchcpp
 #' @importFrom Rcpp sourceCpp
 NULL

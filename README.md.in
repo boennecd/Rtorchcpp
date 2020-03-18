@@ -27,7 +27,7 @@ Install the package
 
 ```bash
 git clone https://github.com/boennecd/Rtorchcpp
-R CMD build Rtorchcpp  && R CMD INSTALL Rtorchcpp_0.1.0.tar.gz
+R CMD build Rtorchcpp  && R CMD INSTALL Rtorchcpp_@PACKAGE_VERSION@.tar.gz
 # or
 R CMD INSTALL Rtorchcpp
 ```
@@ -37,7 +37,7 @@ The first build may fail but gives instruction on what to do.
 ## Testing
 
 ```bash
-R CMD build Rtorchcpp && R CMD check --as-cran Rtorchcpp_0.1.0.tar.gz
+R CMD build Rtorchcpp && R CMD check --as-cran Rtorchcpp_@PACKAGE_VERSION@.tar.gz
 ```
 
 Or

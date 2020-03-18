@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // hello_world
 void hello_world();
-RcppExport SEXP _cpptorch_hello_world() {
+RcppExport SEXP _Rtorchcpp_hello_world() {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     hello_world();
@@ -18,12 +18,12 @@ END_RCPP
 RcppExport SEXP run_testthat_tests();
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_cpptorch_hello_world", (DL_FUNC) &_cpptorch_hello_world, 0},
+    {"_Rtorchcpp_hello_world", (DL_FUNC) &_Rtorchcpp_hello_world, 0},
     {"run_testthat_tests", (DL_FUNC) &run_testthat_tests, 0},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_cpptorch(DllInfo *dll) {
+RcppExport void R_init_Rtorchcpp(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

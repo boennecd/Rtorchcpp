@@ -1,7 +1,7 @@
 Package: Rtorchcpp
 Type: Package
 Title: Rtorchcpp: Wrapper of Pytorch C++ API
-Version: 0.1.0
+Version: @PACKAGE_VERSION@
 Authors@R: c(
   person("Benjamin", "Christoffersen",
          email = "boennecd@gmail.com",

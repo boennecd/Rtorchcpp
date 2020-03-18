@@ -2,4 +2,4 @@
 
 export(hello_world)
 importFrom(Rcpp,sourceCpp)
-useDynLib(cpptorch)
+useDynLib(Rtorchcpp)

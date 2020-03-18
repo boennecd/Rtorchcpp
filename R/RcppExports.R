@@ -3,6 +3,6 @@
 
 #' @export
 hello_world <- function() {
-    invisible(.Call('_cpptorch_hello_world', PACKAGE = 'cpptorch'))
+    invisible(.Call('_Rtorchcpp_hello_world', PACKAGE = 'Rtorchcpp'))
 }
 

@@ -3,7 +3,7 @@
 #include "addition.h"
 
 context("Sample unit tests") {
-  test_that("two plus two equals four") {
-    expect_true(add(2, 2) == 4);
+  test_that("two plus three equals five") {
+    expect_true(add(2, 3) == 5);
   }
 }
